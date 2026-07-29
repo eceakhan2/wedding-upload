@@ -1,41 +1,78 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ece & Ata | Anılarımızı Paylaşın</title>
 
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ece ❤️ Ata | Anılarımızı Paylaşın</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<div class="container">
+<div class="background"></div>
 
-    <h1>Ece ❤️ Ata</h1>
+<div class="card">
 
-    <h2>Anılarımızı Paylaşın</h2>
+<h1>Ece ❤️ Ata</h1>
 
-    <p>
-        Bu özel günümüzde çektiğiniz
-        fotoğraf ve videoları
-        bizimle paylaşabilirsiniz.
-    </p>
+<h2>Anılarımızı Paylaşın</h2>
 
-    <input
-        type="file"
-        id="fileInput"
-        multiple
-        accept="image/*,video/*"
-    >
+<p>
 
-    <button id="uploadBtn">
-        Yükle
-    </button>
+Bu özel günümüzde çektiğiniz fotoğraf ve videoları
 
-    <div id="progress"></div>
+bizimle paylaşabilirsiniz.
 
-    <div id="message"></div>
+</p>
+
+<label class="upload-area">
+
+<input
+type="file"
+id="fileInput"
+multiple
+accept="image/*,video/*"
+hidden
+>
+
+<div class="upload-icon">
+
+📷
+
+</div>
+
+<h3>Fotoğraf / Video Seç</h3>
+
+<span>
+
+veya dosyaları buraya bırakın
+
+</span>
+
+</label>
+
+<button id="uploadBtn">
+
+Yüklemeyi Başlat
+
+</button>
+
+<div class="progress">
+
+<div id="progressBar"></div>
+
+</div>
+
+<p id="status"></p>
 
 </div>
 
